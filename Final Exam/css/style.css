@@ -1,0 +1,130 @@
+*{
+    margin:0%;
+    padding: 0%;
+}
+.head{
+    display:grid;
+    grid-template-columns: repeat(3,33%);
+    background-color: #125784;
+}
+
+.headimg > a > img{
+    height:100px;
+    width:auto;
+}
+.m1{
+    display:flex;
+    list-style: none;
+}
+.m1 > li {
+    padding: 30px 10px;
+    font-size: 20px;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 500;
+}
+.fs{
+    padding-top: 30px;
+}
+.fs > input {
+    font-weight: 700;
+    color:black; 
+}
+.masthead{
+    background-image: url(../resources/img1.jpg);
+    background-size: cover;
+    height: 60vh;
+}
+.masthead > div{
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(5, 5, 5, 0.5);
+}
+.masthead > div > h1{
+    text-align:center;
+    font-family: 'roboto' , sans-serif;
+}
+.s1{
+    display: flex;
+    padding: 0%;
+}
+.s1 > div  > img{
+    height: 255px;
+    width:auto;
+}
+.sd1{
+    background-color: #f57f17;
+    color:white;
+}
+.sd1 > h1 ,
+.sd1 > p {
+    font-family: 'roboto' , sans-serif;
+    padding-top: 40px ;
+    padding-left: 30px;
+    
+}
+.s2{
+    display:flex;
+    padding: 0%;
+}
+.s2 > div > img {
+    height:449px;
+    width:auto;
+}
+.s3{
+    background-color: #5e35b1;
+   padding: 0%; 
+}
+.bb5 > input,
+.bb5 > textarea,
+.bb5 > button {
+    width:300px;
+    font-family: 'roboto' , sans-serif;
+   
+}
+.s3 > form {
+    text-align: center;
+    padding: 20px 20px;
+}
+.s3 > form >p{
+    padding :4px 0px;
+    font-family: 'roboto' , sans-serif;
+}
+.footer{
+    background-color: black;
+    
+}
+.footer > div{
+    display :flex;
+}
+.footer > div > div  > img {
+    height :200px;
+}
+
+#footer > div > div > section{
+    color: white;
+    font-family: 'Montserrat',sans-serif;
+    padding : 20px 30px;
+
+}
+
+@media (max-width: 400px) {
+    .head {
+        grid-template-columns: 100%; 
+    }
+    
+    .m1 {
+        justify-content: center; 
+        font-size: 4px;
+    }
+    
+    .masthead {
+        height: 30vh; 
+    }
+    
+    .s1, .s2 {
+        flex-direction: column; 
+    }
+}
